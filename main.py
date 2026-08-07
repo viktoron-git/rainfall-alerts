@@ -11,12 +11,12 @@ import smtplib
 import requests
 from twilio.rest import Client
 
-api_key = os.environ.get('OWM_API_KEY')
-account_sid = os.environ.get('ACCT_SID')
-auth_token = os.environ.get('AUTH_TOKEN')
+api_key = secrets.OWM_API_KEY
+account_sid = secrets.ACCT_SID
+auth_token = secrets.AUTH_TOKEN
 
-MY_EMAIL = os.environ.get('MY_EMAIL')
-MY_PASSWORD = os.environ.get('MY_PASSWORD')
+MY_EMAIL = secrets.MY_EMAIL
+MY_PASSWORD = secrets.MY_PASSWORD
 
 params = {
     "lat": -4.273897,
